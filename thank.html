@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5b0daf5ea7.js" crossorigin="anonymous"></script>
+    <title>Submission</title>
+          <style>  
+
+#placeButton{
+    background-color: pink, black;
+
+    color: green;
+    border: 2px solid transparent;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    position: absolute;
+   top:50px;
+   left: 50px;
+}
+#placeButton:hover{
+    background:linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #ff0000, #ff7f00, #ffff00, #00ff00,);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-color:rgb(234, 90, 64);
+    transform: translateX(5px);
+    border: 2px solid #000;
+   /* rgb(201, 59, 59) */
+   }
+</style>
+</head>
+<body style="background-color: rgb(35, 65, 56);"> 
+    <div class="container">
+    <h3 style="position: absolute;top: 200px;left: 515px;font-family: 'poppins', sans-serif;font-size: 30px;color: beige;" class="response-message">SUBMISSION SUCCESSFUL</h3>
+    <h3 style="position: absolute;top: 250px;left: 460px;font-family: 'poppins', sans-serif;font-size: 25px;color: beige;" class="response-message">THANK YOU FOR YOUR REGISTRATION!</h3>
+    
+    <button type="button" onclick="CancelLogin()" id="placeButton" class="response-button" ><a href="index.html" style="text-decoration: none;color:black;">Go Back </a></button><i class="fa-solid fa-arrow-left" style="position: absolute;top: 62px;left: 60px;"></i>
+</div>
+</body>
+</html>

@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Page</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/5b0daf5ea7.js" crossorigin="anonymous"></script>
+    <style>
+        #name::placeholder{
+            padding-left: 20px;
+            
+
+        }
+        #register{
+            position: absolute;
+            top: 450px;
+            left: 310px;
+            
+        }
+        #register button:hover{
+            cursor: pointer;
+            background-color: red;
+            color: white;
+            
+        }
+
+     .personal-info-title{
+
+
+        background-image:linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: transparent;
+    display: inline;
+    font-size: 30px;
+    text-align: center;
+    
+    animation: rainbowAnimation 5s  linear infinite;
+        
+     }     
+     @keyframes rainbowAnimation{
+        0%{
+            background-image: linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #0000ff, #4b0082, #8b00ff);
+        }
+        100%{
+            background-image: linear-gradient(to right, #8b00ff, #4b0082, #0000ff, #00ff00, #ffff00, #ff7f00, #ff0000);
+        }
+     }
+     
+#placeButton{
+    background-color: pink, black;
+
+    color: red;
+    border: 2px solid transparent;
+    display: inline-block;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 15px;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+
+    position: absolute;
+   top:500px;
+   left: 80px;
+}
+#placeButton:hover{
+    background:linear-gradient(to right, #ff0000, #ff7f00, #ffff00, #00ff00, #ff0000, #ff7f00, #ffff00, #00ff00,);
+    background-clip: text;
+    -webkit-background-clip: text;
+    background-color:rgb(234, 90, 64);
+    color: transparent;
+    transform: translateX(5px);
+    border: 2px solid #000;
+   /* rgb(201, 59, 59) */
+   }
+    </style>
+ </head>
+ <body style="background-color: rgb(35, 65, 56);">  
+
+<div>
+    <!-- <img src="namie.jpg" alt="" style="width:490px;position: absolute;left: 690px;top: 130px;border-radius: 20px;" class="responsive-image"> -->
+    <img src="namie.jpg" alt="" style="width: 100%;height:820px;filter: brightness(45%);">
+
+    <div style="border: 2px solid transparent;width: 450px;height: 690px;position: absolute;top: 120px;"  class="container">
+        <h1 style="font-family: 'poppins', sans-serif;position: absolute;left: 70px;" class="personal-info-title">Personal Information</h1>
+<form action="upload.php" method="post" enctype="multipart/form-data">
+    <input type="text" id="name" name="name" required placeholder="Surname"  style="width: 220px;height: 40px;border: none; border-radius: 6px;position:absolute;top: 90px;left: 130px;background-color: white;">
+    <input type="text" id="name" name="name" required  placeholder="First Name"  style="width: 220px;height: 40px;border: none; border-radius: 6px;position:absolute;top: 160px;left: 130px;background-color: white;">
+    <input type="text" id="name" name="name" required  placeholder="Other Name" style="width: 220px;height: 40px;border: none; border-radius: 6px;position:absolute;top: 230px;left: 130px;background-color: white;">
+    <input type="email" id="name" name="name" required  placeholder="Email Address"  style="width: 220px;height: 40px;border: none; border-radius: 6px;position:absolute;top: 300px;left: 130px;background-color:white;">
+    <input type="number" id="name" name="name" required  placeholder="Whatsapp Number"  style="width: 220px;height: 40px;border: none; border-radius: 6px;position:absolute;top: 370px;left: 130px;background-color: white;">
+    <input type="text" id="name" name="name" required  placeholder="Organization"  style="width: 220px;height: 40px;border: none; border-radius: 6px;position:absolute;top: 440px;left: 130px;background-color:white;">
+    
+</form>
+<button type="button" onclick="CancelLogin()" id="placeButton"  class="next-button" ><a href="input.html" style="text-decoration: none;color: black;">Next</a></button><i class="fa-solid fa-arrow-right" style="position: absolute;top: 512px;left: 150px;color: black;"></i>
+
+<!-- <button  id="register" style="width: 100px;height: 40px;border: none;border-radius: 15px;background-color:rgb(129, 182, 164);"><a href="registration.html" style="text-decoration: none;color: black;">Next</a></button><a href="registration.html"><i class="fa-solid fa-arrow-right" style="position: absolute;top: 461px;left: 385px;"></i></a> -->
+    </div>
+
+    </div>
+</div>
+     
+ </body>
+ </html>
+<!--       
+    <h1>Personal information</h1>
+   <form>
+      
+      <input type="text" placeholder="surname"> <br> <br>
+
+      <input type="text" placeholder="first name"><br> <br>
+      <input type="text" placeholder="other name"><br> <br>
+      <input type="email" placeholder="Email adress"> <br><br>
+      <input type="number" placeholder="whatsapp number"> <br><br>
+      <input type="text" placeholder="organization"> <br><br> <br><br><br>
+
+
+   <h1>Registration</h1>
+   <h3>Select registration type:</h3>
+            
+            
+            <select name="FEEDBACK" id="">
+                <option value="1">Day 1-2 (10,000)</option>
+                <option value="2">Day 1-3 (15,000)</option>
+                <option value="3">student (10,000)</option>
+                </select><br>
+
+                <h3><b>Kindly make payment into this account</b> <br>
+               Account name: NITP-YPF Lagos State Chapter <br>
+            Account Number: 1015009439 <br>
+         Bank: Zenith Bank</h3> <br><br> <br><br><br>
+         
+         <div>
+         <form action="upload.php" method="post" enctype="multipart/form-data">
+            <label for="file"> upload file:</label> <br><br>
+            <input type="file" id="file" accept=".pdf, .doc, .jpg" required> <br><br> 
+         </form>   <br><br>
+            <input type="submit" value="submit"> <br><br>
+         </div>
+              
+               </form>
+
+               </div>
+               
+   
+   
+   
+ 
+
+    
+ </body>
+ </html> -->
